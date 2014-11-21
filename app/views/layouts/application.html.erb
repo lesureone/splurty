@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
+
 	<!-- Header-->
 	<header>
 		<div class="col-xs-3">
@@ -24,14 +24,27 @@
 		</div>
 
 		<div class="col-xs-5 links">
-			<%= link_to "About Us", "#" %>
-			<%= link_to "Add Quote", "#" %>			
+			<%= link_to "About", "#" %>
+			<%= link_to "Add a quote", "#" %>			
 		</div>
 	</header>
 	<br class= "clear"/>
 	<hr />
 
-<%= yield %>
+	<div class= "container">
+		<%= yield %>
+	</div>
 
+	<div class= "footer">
+		<div class= "container">
+			<div class= "col-xs-6">
+				<%= link_to "This isn't enough, I need more hip-hop quotes", "#", :class => "next-quote" %>
+			</div>
+			
+			<div class= "col-xs-6 footer-blurb">
+				<p class= "text-muted">Designed and hacked by Larry LeSure</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
