@@ -1,10 +1,11 @@
 <h2>
-	<span>Punchline / No.<%= @quote.id %></span>
 	The best punchlines from your favorite artists!
+	<br />
+	<br />
+	<br />
+	<span>Punchline / No.<%= @quote.id %></span>
+	
 </h2>
-<br />
-<br />
-
 <h1><%= @quote.saying %></h1>
 <h2><%= @quote.author %></h2>
 
